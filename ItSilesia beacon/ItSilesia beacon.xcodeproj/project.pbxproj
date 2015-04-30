@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1707D96C1AF1475200465140 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707D96B1AF1475200465140 /* SettingsView.swift */; };
+		1795254C1AF0CE450038277F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795254B1AF0CE450038277F /* AppDelegate.swift */; };
+		1795254E1AF0CE450038277F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795254D1AF0CE450038277F /* ViewController.swift */; };
+		179525511AF0CE450038277F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1795254F1AF0CE450038277F /* Main.storyboard */; };
+		179525531AF0CE450038277F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179525521AF0CE450038277F /* Images.xcassets */; };
+		179525561AF0CE450038277F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179525541AF0CE450038277F /* LaunchScreen.xib */; };
+		179525621AF0CE450038277F /* ItSilesia_beaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179525611AF0CE450038277F /* ItSilesia_beaconTests.swift */; };
+		1795256E1AF0D2FF0038277F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1795256D1AF0D2FF0038277F /* CoreBluetooth.framework */; };
+		179525701AF0D3050038277F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1795256F1AF0D3050038277F /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		17D280F61AF1558C00EC6E2F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D280F51AF1558C00EC6E2F /* Image.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1795255C1AF0CE450038277F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1795253E1AF0CE450038277F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 179525451AF0CE450038277F;
+			remoteInfo = "ItSilesia beacon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1707D96B1AF1475200465140 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		179525461AF0CE450038277F /* ItSilesia beacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ItSilesia beacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1795254A1AF0CE450038277F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1795254B1AF0CE450038277F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1795254D1AF0CE450038277F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		179525501AF0CE450038277F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		179525521AF0CE450038277F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		179525551AF0CE450038277F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1795255B1AF0CE450038277F /* ItSilesia beaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ItSilesia beaconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		179525601AF0CE450038277F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179525611AF0CE450038277F /* ItSilesia_beaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItSilesia_beaconTests.swift; sourceTree = "<group>"; };
+		1795256D1AF0D2FF0038277F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1795256F1AF0D3050038277F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		17D280F51AF1558C00EC6E2F /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		179525431AF0CE450038277F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179525701AF0D3050038277F /* QuartzCore.framework in Frameworks */,
+				1795256E1AF0D2FF0038277F /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179525581AF0CE450038277F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1795253D1AF0CE450038277F = {
+			isa = PBXGroup;
+			children = (
+				179525481AF0CE450038277F /* ItSilesia beacon */,
+				1795255E1AF0CE450038277F /* ItSilesia beaconTests */,
+				179525471AF0CE450038277F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		179525471AF0CE450038277F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				179525461AF0CE450038277F /* ItSilesia beacon.app */,
+				1795255B1AF0CE450038277F /* ItSilesia beaconTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		179525481AF0CE450038277F /* ItSilesia beacon */ = {
+			isa = PBXGroup;
+			children = (
+				1795256F1AF0D3050038277F /* QuartzCore.framework */,
+				1795256D1AF0D2FF0038277F /* CoreBluetooth.framework */,
+				17D280F51AF1558C00EC6E2F /* Image.swift */,
+				1795254B1AF0CE450038277F /* AppDelegate.swift */,
+				1795254D1AF0CE450038277F /* ViewController.swift */,
+				1707D96B1AF1475200465140 /* SettingsView.swift */,
+				1795254F1AF0CE450038277F /* Main.storyboard */,
+				179525521AF0CE450038277F /* Images.xcassets */,
+				179525541AF0CE450038277F /* LaunchScreen.xib */,
+				179525491AF0CE450038277F /* Supporting Files */,
+			);
+			path = "ItSilesia beacon";
+			sourceTree = "<group>";
+		};
+		179525491AF0CE450038277F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1795254A1AF0CE450038277F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1795255E1AF0CE450038277F /* ItSilesia beaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				179525611AF0CE450038277F /* ItSilesia_beaconTests.swift */,
+				1795255F1AF0CE450038277F /* Supporting Files */,
+			);
+			path = "ItSilesia beaconTests";
+			sourceTree = "<group>";
+		};
+		1795255F1AF0CE450038277F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				179525601AF0CE450038277F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		179525451AF0CE450038277F /* ItSilesia beacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179525651AF0CE450038277F /* Build configuration list for PBXNativeTarget "ItSilesia beacon" */;
+			buildPhases = (
+				179525421AF0CE450038277F /* Sources */,
+				179525431AF0CE450038277F /* Frameworks */,
+				179525441AF0CE450038277F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ItSilesia beacon";
+			productName = "ItSilesia beacon";
+			productReference = 179525461AF0CE450038277F /* ItSilesia beacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1795255A1AF0CE450038277F /* ItSilesia beaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179525681AF0CE450038277F /* Build configuration list for PBXNativeTarget "ItSilesia beaconTests" */;
+			buildPhases = (
+				179525571AF0CE450038277F /* Sources */,
+				179525581AF0CE450038277F /* Frameworks */,
+				179525591AF0CE450038277F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1795255D1AF0CE450038277F /* PBXTargetDependency */,
+			);
+			name = "ItSilesia beaconTests";
+			productName = "ItSilesia beaconTests";
+			productReference = 1795255B1AF0CE450038277F /* ItSilesia beaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1795253E1AF0CE450038277F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Tomasz Kaczmarzyk";
+				TargetAttributes = {
+					179525451AF0CE450038277F = {
+						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					1795255A1AF0CE450038277F = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 179525451AF0CE450038277F;
+					};
+				};
+			};
+			buildConfigurationList = 179525411AF0CE450038277F /* Build configuration list for PBXProject "ItSilesia beacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1795253D1AF0CE450038277F;
+			productRefGroup = 179525471AF0CE450038277F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				179525451AF0CE450038277F /* ItSilesia beacon */,
+				1795255A1AF0CE450038277F /* ItSilesia beaconTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		179525441AF0CE450038277F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179525511AF0CE450038277F /* Main.storyboard in Resources */,
+				179525561AF0CE450038277F /* LaunchScreen.xib in Resources */,
+				179525531AF0CE450038277F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179525591AF0CE450038277F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		179525421AF0CE450038277F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1707D96C1AF1475200465140 /* SettingsView.swift in Sources */,
+				17D280F61AF1558C00EC6E2F /* Image.swift in Sources */,
+				1795254E1AF0CE450038277F /* ViewController.swift in Sources */,
+				1795254C1AF0CE450038277F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179525571AF0CE450038277F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179525621AF0CE450038277F /* ItSilesia_beaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1795255D1AF0CE450038277F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 179525451AF0CE450038277F /* ItSilesia beacon */;
+			targetProxy = 1795255C1AF0CE450038277F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1795254F1AF0CE450038277F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				179525501AF0CE450038277F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		179525541AF0CE450038277F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				179525551AF0CE450038277F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		179525631AF0CE450038277F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		179525641AF0CE450038277F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		179525661AF0CE450038277F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "ItSilesia beacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		179525671AF0CE450038277F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "ItSilesia beacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		179525691AF0CE450038277F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ItSilesia beaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItSilesia beacon.app/ItSilesia beacon";
+			};
+			name = Debug;
+		};
+		1795256A1AF0CE450038277F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ItSilesia beaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItSilesia beacon.app/ItSilesia beacon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		179525411AF0CE450038277F /* Build configuration list for PBXProject "ItSilesia beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179525631AF0CE450038277F /* Debug */,
+				179525641AF0CE450038277F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179525651AF0CE450038277F /* Build configuration list for PBXNativeTarget "ItSilesia beacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179525661AF0CE450038277F /* Debug */,
+				179525671AF0CE450038277F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179525681AF0CE450038277F /* Build configuration list for PBXNativeTarget "ItSilesia beaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179525691AF0CE450038277F /* Debug */,
+				1795256A1AF0CE450038277F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1795253E1AF0CE450038277F /* Project object */;
+}
