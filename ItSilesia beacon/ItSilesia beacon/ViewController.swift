@@ -8,16 +8,25 @@
 import UIKit
 import CoreLocation
 import QuartzCore
+import Foundation
 
 class ViewController: UIViewController, CLLocationManagerDelegate, UITextViewDelegate {
     
-
-    @IBOutlet var textView: UITextView!
+    @IBOutlet var viewOfText: UITextView!
     
-    var toPass: String!
-    var maybeNil: Int!
+    @IBOutlet var background: UIImageView!
     
+    @IBOutlet var imageOn: UIImageView!
+    
+    @IBOutlet var settings: UIButton!
+    
+    var optionsFromSettings: String!
+    
+    var lastBeacon: NSNumber!
+    
+    let image: Image = Image()
     let locationManager : CLLocationManager! = CLLocationManager()
+    
     /*
     let region1: CLBeaconRegion! = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"), major: 64619, identifier: "Estimotes1")
     
@@ -33,18 +42,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextViewDel
     
     
     override func viewDidLoad() {
-        if maybeNil == nil
-        {
-            println("is nil")
-        }
+        viewOfText.frame = CGRect(x: 32, y: 275, width: 256, height: 50)
         locationManager.requestAlwaysAuthorization()
         super.viewDidLoad()
-        textView.text = toPass
-        //labelText.text = toPass
         self.navigationController?.navigationBar.hidden = true
         self.navigationItem.hidesBackButton = true
         locationManager.delegate = self
-        //textView.editable = false
         //locationManager.startMonitoringForRegion(region2)
         //locationManager.startMonitoringForRegion(region3)
         //locationManager.requestStateForRegion(region1)
@@ -56,6 +59,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextViewDel
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated);
+    }
+    
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if CLLocationManager.authorizationStatus() == CLAuthorizationStatus.Denied
         {
@@ -125,12 +133,64 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UITextViewDel
     func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.Unknown }
         println("I have found \(beacons.count)")
-        if (knownBeacons.count > 0) {
-        let closestBeacon = knownBeacons[0] as! CLBeacon
-        if closestBeacon.major == 46875 || closestBeacon.major == 9177
+        if knownBeacons.count == 0
+        {
+            //settings.hidden = true
+            //noBeacons.hidden = false
+            //self.noBeacons.image = UIImage(named: "placeholder")
+            
+        }
+        else if (knownBeacons.count > 0)
+        {
+            let closestBeacon = knownBeacons[0] as! CLBeacon
+            if closestBeacon.major != lastBeacon
             {
-                        
+                switch closestBeacon.major {
+                case 46875:
+                    //case1
+                    if optionsFromSettings == nil
+                    {
+                    setText("option01")
+                    setImage("option01")
+                    }
+                    else
+                    {
+                    setText(optionsFromSettings)
+                    setImage(optionsFromSettings)
+                    }
+                    break
+                    //case1
+                default:
+                    println("default")
+                }
+                lastBeacon = closestBeacon.major
             }
         }
+    }
+    func frameNew(let frameSet: Int)
+    {
+        if frameSet <= 220
+        {
+            self.viewOfText.frame = CGRect(x: 32, y: 272, width: 256, height: frameSet)
+        }
+        else if frameSet > 220
+        {
+            self.viewOfText.frame = CGRect(x: 32, y: 272, width: 256, height: 250)
+            self.viewOfText.scrollEnabled = true
+        }
+    }
+    func setText(let text: String)
+    {
+        var stringToUse = image.changeText(text)
+        var x: Int? = Int(count(stringToUse))
+        var y: Int? = image.autoSize(x!)
+        frameNew(y!)
+        self.viewOfText.text = stringToUse
+    }
+    func setImage(let stringOfImage: String)
+    {
+        var imageNew = image.changeImage(stringOfImage)
+        imageOn.image = UIImage(named: imageNew
+        )
     }
 }

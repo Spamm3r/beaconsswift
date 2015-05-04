@@ -60,20 +60,33 @@ class SettingsView: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        //myLabel.text = beaconPick[row]
         println(beaconPick[row])
+        pickers = nil
         pickers = beaconPick[row]
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "pass") {
             var svc = segue.destinationViewController as! ViewController
-            let stringus: String = "aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            svc.toPass = stringus
-            //svc.sizeToPass = image.autoSize(count(svc.toPass))
-            let n: Int? = Int(count(stringus))
-            let k: Int? = image.autoSize(n!)
-            svc.textView.frame = CGRect(x: 59, y: 283, width: 256, height: k!)
+            svc.optionsFromSettings = pickers
+            /*
+            if pickers == nil
+            {
+                var stringus: String = image.changeText("option01")
+                svc.toPass = stringus
+                let n: Int? = Int(count(stringus))
+                let k: Int? = image.autoSize(n!)
+                svc.maybeNil = k
+            }
+            else
+            {
+                println("not nil")
+                var stringNotNil: String = image.changeText(pickers)
+                svc.toPass = stringNotNil
+                let n: Int? = Int(count(stringNotNil))
+                let k: Int? = image.autoSize(n!)
+                svc.maybeNil = k
+            }*/
         }
     }
 
